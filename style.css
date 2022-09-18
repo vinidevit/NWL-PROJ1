@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.3140ae934d38db63adf120a3d1849ab9?rik=clXXzT3RiV4osw&riu=http%3a%2f%2fphandroid.com%2fwp-content%2fuploads%2f2015%2f02%2fgalaxy-wallpaper-11.jpg&ehk=vmd1hPvE3G0tbgUUdIouU2Yy5nnmR2f0CBIGdacT6TE%3d&risl=1&pid=ImgRaw&r=0);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: rgb(0, 0, 0);
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header{
+    text-align: center;
+    margin-top: 32px;
+}
+
+header a{
+    display: flex;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    transition: transform .3s;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+section{
+    color: white;
+    padding-top: 4px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.social-list img{
+    width: 4rem;
+}
+
+.channel-list img{
+    border-radius: 50%;
+    width: 7rem;;
+}
+
+.games-list img{
+    border-radius: 5vw;
+    width: 8rem;
+}
+/* animation */
+
+header div{
+    animation: fromtop .9s backwards;
+}
+
+main section{
+    animation: frombotton .7s .4s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes frombotton {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
